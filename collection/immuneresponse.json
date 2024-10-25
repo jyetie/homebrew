@@ -1,0 +1,589 @@
+{
+  "_meta": {
+  "sources": [
+    {
+      "json": "immuneresponse",
+      "abbreviation": "IR",
+      "full": "Immune Response Homebrew",
+      "authors": [
+        "Leambo"
+      ],
+      "convertedBy": [
+        "amy"
+      ],
+      "version": "1.0",
+      "url": "https://example.com/my-brew.pdf",
+      "status": "wip",
+      "color": "e231e1",
+      "hidden": true,
+      "edition": "classic"
+    }
+  ],
+  "dateAdded": 1729763270,
+  "dateLastModified": 1729763270
+},
+
+"subclass": [
+    {
+        "name": "The Lord Below",
+        "source": "immuneresponse",
+        "className": "warlock",
+        "classSource": "PHB",
+        "shortName": "The Lord Below",
+        "subclassFeatures": [
+            "Excise Presence|Warlock|PHB|The Lord Below|immuneresponse|1|immuneresponse"
+        ]
+    }
+],
+
+"subclassFeature": [
+    {
+        "name": "Excise Presence",
+        "source": "immuneresponse",
+        "className": "Warlock",
+        "classSource": "PHB",
+        "subclassShortName": "The Lord Below",
+        "subclassSource": "immuneresponse",
+        "level": 1,
+        "entries": [
+            "As an action, you attempt to excise your presence from another creature's memories. For each Warlock level you have, you can excise 10 minutes of one creature’s memory of 1 person.",
+            "For example, at level 8, you could remove all memories of you 1 creature experienced in the past 80 minutes…or you could remove all memories of you and 1 other creature from the past 10 minutes of 4 different targets’ memories.",
+            "You must have line of sight on a target to use Excise Presence on them, and they must be within 30ft of you.",
+            "A target makes a Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a successful save, a target is immune to this effect for the next 24 hours.",
+            "A target’s mind smoothes over the gaps you leave."
+
+        ]
+    }
+],
+
+"optionalfeature": [
+  {
+	"name": "Inverted Gaze",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"EI"
+	],
+	"entries": [
+		"You cannot be surprised while conscious, and if a creature within 30 feet of you is looking at you, you immediately become aware of that creature's location."
+	]
+},
+  {
+	"name": "Incept Conspiracy",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Zephyr"
+			]
+		}
+	],
+	"entries": [
+		"Make a persuasion check. This check is contested by your target, and their resistance scales with their insightfulness, the strength of their personality, and their personal power.",
+          "On a success, the two of you instantly enter a state of psychically dilated experience, inserted into their recent memories, where you socially interact with them in a way that improves their propinquity with you and their opinion of you.",
+          "How much you bring them around can be improved by degrees of failure, where them failing by increments of 5 will shift their willingness to help by 1 step.",
+          {"type": "list",
+            "items": [
+              "True Believer",
+              "Bootlicker",
+              "Mercenary Attitude",
+              "Ally of Convenience",
+              "Rebel of Compatible Cause",
+              "Co-Conspirator"]
+            },
+            "They are inclined to think the best of you. They see you as welcome in their sphere of influence, and assume you have the right to be wherever you are. They treat you as a member of the same social sphere. You can secure a meeting with them if you need to.",
+            "You command their respect, and even your companions can expect to receive free room, board, and services that can be rendered from within a place they hold sway, up to and including spellcasting, if they are able—though you must provide any costly materials needed yourself. They will support you—but only you—practically indefinitely, at a similar quality of life that they have.",
+            "While near their sphere of influence, you can call upon them for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with them.",
+            "You know a set of secret signs and passwords you can use to communicate with them, and they will assist you in finding information. They never risk their lives for you or risk revealing their true identities to authorities.",
+            "They will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+	]
+},
+
+{
+	"name": "The Ties That Bind Us",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Aslanta"
+			]
+		}
+	],
+	"entries": [
+		"Aslanta has long played the part of one to bridge the gap—between the citizens in her audience and the wild outlands, between disparate communities, between her friends and the spirits of nature, between her story’s past incarnations and the present day…",
+"Now she invokes these ties to bind those she personally knows and trusts—and that trust her in turn—to herself, and to each other.",
+"Aslanta knows a list of people in her inner circle, their current state of wellbeing, and current plane.",
+"Additionally, when someone in her inner circle—including Aslanta herself—targets any others in her inner circle, they may consider them to be in range.",
+"As the binding point, Aslanta may choose to prevent any connections she does not approve of."
+	]
+},
+{
+	"name": "Adrenaline High",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Aslanta"
+			]
+		}
+	],
+	"entries": [
+		"Blood rushes. Hearts hammer. Boots pound the earth, and engines roar. This is your beat; this is your accompaniment.",
+    "As an action, make a Performance check. All that can hear your invigorating song (default: 30ft radius) have their speed, their mount’s speed, or their vehicle’s speed doubled. Additionally, they gain Temp HP equal to your Performance check. These effects last as long as Aslanta maintains her song.",
+    "Aslanta’s song may end in a few different ways—most easily, by not using her action on her turn to sustain it. ",
+    "The following will also cause her song to end:",
+    {"type": "list",
+       "items": [
+         "failing a concentration check (must be made even if not concentrating for other reasons)",
+          "a number of affected individuals equal to or greater than her Performance check falling",
+          "Aslanta being Silenced"
+            ]
+            },
+    "If her song ends for any reason other than her choosing to cease sustaining it, Aslanta may not activate Adrenaline High again until she completes a long rest. ",
+    "Additionally, she and all affected individuals become incapacitated, and have their movement reduced to zero, until they next end their turn."
+	]
+},
+{
+	"name": "Betray Intention",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+      "item": [
+        "Sarin"
+      ]
+		}
+	],
+	"entries": [
+		"Sight is the enemy. To be perceived is to be harmed, to be hunted—to be monitored and controlled.",
+"Sarin has never hesitated to use the tools of the enemy against them.",
+"Sarin may perceive any object, creature, or other phenomena within 30ft of her that has been deliberately hidden, so long as she searches them out. This ability is blocked by more than 1 inch of common metal, 1 foot of stone, 3 feet of wood or dirt, or a thin sheet of lead.",
+"Additionally, a number of times equal to her proficiency bonus, she may make a perception check to attempt to have her senses penetrate further. She regains all expended uses of this ability upon completing a short or long rest.",
+{
+  "type": "table",
+  "caption": "",
+  "colLabels": [
+    "DC",
+    "Blocking Power"
+  ],
+  "colStyles": [
+    "col-4 text-center",
+    "col-8 text-center"
+  ],
+  "rows": [
+    [
+      "DC 15",
+      "60 ft of air"
+    ],
+    [
+      "DC 20",
+      "90 ft of air"
+    ],
+    [
+    "DC 25",
+    "120 ft of air"
+    ]
+  ],
+  "footnotes": [
+    "Equivalent Blocking Power:",
+    {"type": "list",
+      "items": ["A thin sheet of lead",
+      "1 inch of common metal",
+      "1 foot of stone",
+      "3 feet of wood or dirt",
+      "30 feet of air"
+        ]
+    }
+  ]
+}
+	]
+},
+{
+	"name": "Sarin's Poison Feature",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Sarin"
+			]
+		}
+	],
+	"entries": [
+		"You have a DC for poisons that is Con based; use this DC for poisons unless they already have a higher save DC.",
+    "Downtime activity: ask for poison",
+    "During downtime/rest, ask the spirits for poison. They’ll bring you/make you some. When you get higher level you get access to better poisons."
+	]
+},
+{
+	"name": "Diffuse Toxin",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Sarin"
+			]
+		}
+	],
+	"entries": [
+		"When you would normally take poison damage, you suffer none of the effects of the associated poison, and the damage does not affect your current health. Instead, it pools within you, building up over time.",
+"If you ever accrue double your max health in this pool, you instantly die; your body can no longer contain the gathered poison, and it ravages your body as it bursts out of you.",
+"If you begin a long rest and this pool is at least as full as your max health, you weave a cocoon around yourself and begin a mutagenic metamorphosis. You cannot abort this process yourself, but if someone else forcibly removes you from your cocoon—or if it is sufficiently damaged—the process ends, and your pool does NOT reset.",
+"If you complete your long rest inside this cocoon, your pool is reset, and you gain a mutation that you roll for on the Beneficial Mutations table."
+	]
+}
+],
+
+"spell": [
+  {
+    "name": "Permanency",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 10,
+        "unit": "minute"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "a gold—or better—plated glove, and a suitable spirit"
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "dispel"
+        ]
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "Ascend.",
+      "Make a spell affecting a person permanent. The target must be willing, and each use of Permanency must have individual DM approval.",
+      "You may only have a number of spell levels tethered to a creature equal to their level, or CR."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Grasp Tether",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "a gold—or better—plated glove"
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "Grasp the immaterial.",
+      "You may physically feel and interact with silvery cords made by the Tether Soul spell and other spiritual objects, entities, and creatures, with your gloved hand.",
+      "Removing the glove ends the spell early."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tether Soul",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "special"
+    },
+    "components": {
+      "v": false,
+      "s": false,
+      "m": {
+        "text": "a length of mana conductive wire"
+      }
+    },
+    "duration": [
+      {
+        "type": "special"
+        }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "To separate the soul from the body is death; keeping them tethered is a way to have the two in different places, without that happening.",
+      "A silvery cord extends from between the shoulder blades of the target and trails behind them, fading to invisibility after 10 feet. This cord is the tether to their material body. As long as the tether remains intact, they can find their way home. If the cord is cut—something that can happen only when an effect specifically states that it does—their soul and body are separated, killing them instantly.",
+      "Their soul can freely travel through this plane of the dead and can pass through portals there leading to any other plane. If they enter a new plane or return to the plane they were on when you cast this spell, their body and possessions are transported along the silver cord, allowing them to re-enter their body as they enter the new plane. Their soul form is a separate incarnation; any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.",
+      "The higher the grade of mana conductive metal used in the casting of this spell, the stronger the silver cord; the longer the wire, the more stable the connection across long distances."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+    },
+{
+      "name": "Suspend Animation",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 6,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "silver dust; half pound for a tiny creature, and an additional half pound for each size above tiny"
+        }
+      },
+     "duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 8
+			}
+		}
+	],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "A willing target is placed into a near death state, their brain dormant while their body is sustained.",
+        "The target is unconscious, resistant to all damage, and has their bodily needs magically met, so long as the spell lasts."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chrysalis of Suspension",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 3,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "dispel"
+          ]
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "A corpse is carefully ensconced within a buffer of stilling energy, preventing changes of any kind to occur upon it. This buffer is small and fragile, however; any damage or conditions that would be detrimental to a living person in the long term will cause the spell to end.",
+      "For all intents and purposes, the corpse is considered to be in the same state as it was when the spell was first cast, so long as the spell lasts."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Inhibit Vitality",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 1,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "1 hp of living blood and a shard of dead bone"
+      },
+     "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You convert the smallest discrete unit of positive energy into negative energy, commanding it to inhibit the vital processes of a creature; it listens, eager to touch the land of the living.",
+      "Make a ranged spell attack against a creature. On a hit, the target takes 1d8 necrotic damage, and it takes this damage again every time it regains hit points for the duration of this spell."
+      ],
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "When you cast this spell using a spell slot of 2nd level or higher, you may choose to consume an additional 1d8 hp of living blood per slot level above 1st, to increase the spell’s damage by 1d8."
+        ]
+      }
+    ],
+    "miscTags": [
+      "HL"
+    ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    }
+    ]
+}
