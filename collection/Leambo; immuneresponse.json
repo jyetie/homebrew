@@ -13,7 +13,7 @@
       ],
       "version": "1.0",
       "url": "https://raw.githubusercontent.com/jyetie/homebrew/refs/heads/test/collection/Leambo%3B%20immuneresponse.json",
-      "status": "wip",
+      "status": "ready",
       "color": "e231e1",
       "hidden": true,
       "edition": "classic"
@@ -585,5 +585,63 @@
         ]
       }
     }
-    ]
+    ],
+
+"variantrule": [
+    {
+        "name": "Mana Crysts",
+        "source": "immuneresponse",
+        "page": 0,
+        "ruleType": "V",
+        "entries": [
+            "Can store/draw spell slots",
+            {"type": "list",
+            "items": [
+              "Any citizen with spell slots",
+              "Anyone with at least +2 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x spell level; this check must be made every time."]
+            },
+            "Can merge mana crystals of the same fill percentage and slot level, to create one mana crystal with the capacity of both.",
+            {"type": "list",
+            "items": [
+              "Anyone with at least +4 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x spell level; this check must be made every time."]
+            },
+            "Can merge mana crystals of the same capacity and slot level, to create one mana crystal with the same capacity, but of the next slot level up.",
+            {"type": "list",
+            "items": [
+              "Anyone with at least +6 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x target spell level; this check must be made every time."
+              ]             
+            },
+            "Attuning to a mana crystal increases its store/draw efficiency for you by 1 step.",
+            "Can trim mana crystals to reduce the number of imperfections, improving store/draw efficiency by 1 step. This halves the capacity, or reduces the spell level by one.",
+            {"type": "list",
+            "items": ["Anyone with at least +8 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+            "Anyone who succeeds an arcana check with a DC of 10+2x target spell level; this check must be made every time."
+              ]             
+            },
+            "Can partitioned",
+            {"type": "list",
+            "items": [
+              "Caps at 5th lvl. Anyone with at least +10 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x the highest spell level + the number of different spell levels; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x the highest spell level + the number of different spell levels; this check must be made every time."
+              ]             
+            },
+            "Can modular",
+            {"type": "list",
+            "items": [
+            "Caps at 5th lvl. Anyone with at least +12 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x the highest possible spell level + the number of slot levels; after one success, no further aid or checks are needed.",
+            "Anyone who succeeds an arcana check with a DC of 10+2x the highest possible spell level + the number of slot levels; this check must be made every time."
+            ]             
+            },
+            "Can precision",
+            {"type": "list",
+            "items": [
+              "Caps at 5th lvl. Anyone with at least +14 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x the highest possible spell level + the number of sorcery points; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x the highest possible spell level + the number of sorcery points; this check must be made every time."]             
+            }
+          ]
+        }
+]
 }
