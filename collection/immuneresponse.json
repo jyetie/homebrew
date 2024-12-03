@@ -1,0 +1,1328 @@
+{
+  "_meta": {
+  "sources": [
+    {
+      "json": "immuneresponse",
+      "abbreviation": "IR",
+      "full": "Immune Response Homebrew",
+      "authors": [
+        "Leambo"
+      ],
+      "convertedBy": [
+        "amy"
+      ],
+      "version": "1.0",
+      "url": "https://raw.githubusercontent.com/jyetie/5etoolshomebrew/refs/heads/main/immuneresponse.json",
+      "color": "e231e1"
+    }
+  ],
+  "edition": "classic",
+  "status": "ready",
+  "dateAdded": 1733217249,
+  "dateLastModified": 1733217249
+},
+
+"subclass": [
+    {
+        "name": "The Lord Below",
+        "source": "immuneresponse",
+        "className": "Warlock",
+        "classSource": "PHB",
+        "shortName": "The Lord Below",
+        "subclassFeatures": [
+            "Excise Presence|Warlock|PHB|The Lord Below|immuneresponse|1|immuneresponse",
+            "Familiar Upgrade|Warlock|PHB|The Lord Below|immuneresponse|6|immuneresponse"
+        ]
+    },
+    {
+      "name": "Hagblood",
+      "source": "immuneresponse",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "shortName": "Hagblood",
+      "subclassFeatures": [
+          "Fames|Warlock|PHB|Hagblood|immuneresponse|1|immuneresponse"
+      ]
+  },
+  {
+    "name": "Solar",
+    "source": "immuneresponse",
+    "className": "Sorcerer",
+    "classSource": "PHB",
+    "shortName": "Solar",
+    "subclassFeatures": [
+        "Solar Sorcery Expanded Spell List|Sorcerer|PHB|Solar|immuneresponse|1|immuneresponse",
+        "Blazing Glory|Sorcerer|PHB|Solar|immuneresponse|1|immuneresponse"
+      ],
+      "subclassSpells": [
+      "Goodberry",
+      "Healing Word",
+      "Word of Radiance|XGE",
+      "Guiding Bolt"
+    ]
+},
+{
+  "name": "Lunar IR",
+  "source": "immuneresponse",
+  "className": "Sorcerer",
+  "classSource": "PHB",
+  "shortName": "Lunar IR",
+  "subclassFeatures": [
+      "Lunar Sorcery Expanded Spell List|Sorcerer|PHB|Lunar IR|immuneresponse|1|immuneresponse",
+      "Moon Fire|Sorcerer|PHB|Lunar IR|immuneresponse|1|immuneresponse"
+    ],
+  "subclassSpells": [
+    "Detect Evil and Good",
+    "Detect Magic",
+    "Detect Poison and Disease",
+    "Faerie Fire",
+    "Identify",
+    "Jump",
+    "Long Strider",
+    "Protection from Evil and Good",
+    "Purify Food and Drink"
+  ]
+}
+],
+
+"subclassFeature": [
+    {
+        "name": "Excise Presence",
+        "source": "immuneresponse",
+        "className": "Warlock",
+        "classSource": "PHB",
+        "subclassShortName": "The Lord Below",
+        "subclassSource": "immuneresponse",
+        "level": 1,
+        "entries": [
+            "As an action, you attempt to excise your presence from another creature's memories. For each Warlock level you have, you can excise 10 minutes of one creature’s memory of 1 person.",
+            "For example, at level 8, you could remove all memories of you 1 creature experienced in the past 80 minutes…or you could remove all memories of you and 1 other creature from the past 10 minutes of 4 different targets’ memories.",
+            "You must have line of sight on a target to use Excise Presence on them, and they must be within 30ft of you.",
+            "A target makes a Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a successful save, a target is immune to this effect for the next 24 hours.",
+            "A target’s mind smoothes over the gaps you leave." ]
+    },
+    {
+      "name": "Familiar Upgrade",
+      "source": "immuneresponse",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "subclassShortName": "The Lord Below",
+      "subclassSource": "immuneresponse",
+      "level": 6,
+      "entries": [
+        "DD upgraded!",
+        "{@creature Dust Devil|IR}"
+      ]
+  },
+  {
+    "name": "Fames",
+    "source": "immuneresponse",
+    "className": "Warlock",
+    "classSource": "PHB",
+    "subclassShortName": "Hagblood",
+    "subclassSource": "immuneresponse",
+    "level": 1,
+    "entries": [
+      "You can use Blood Magic a number of times per day equal to your Charisma modifier. To do so, you must spend 1d4 hit points worth of living blood—though it need not be your own, it must be on your person, and yours is the most easily accessible.",
+      {
+        "type": "list",
+			  "items": [
+          "{@underline Corrupt Mana:} When you cast a spell, you can change its mana—and therefore, damage type—to necrotic.",
+          "{@underline Sacrificial Supplement:}Spend blood to forgo the components of a spell you cast. For each component you forgo, you spend the usual blood cost. Additionally, for each gp worth of material components you forgo, you must spend 1 hit point of living blood."]
+  }]
+},
+{
+  "name": "Solar Sorcery Expanded Spell List",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Solar",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": [
+    {
+			"type": "table",
+			"caption": "Solar Sorcery Expanded Spell List",
+			"colLabels": [
+				"Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"Cantrip",
+					"{@spell Word of Radiance|XGE}"
+				],
+				[
+				  "1",
+				  "{@spell Guiding Bolt}, {@spell Goodberry}, {@spell Healing Word}"]
+			]
+		}
+  ]
+},
+{
+  "name": "Blazing Glory",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Solar",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": [
+    "The power of the Sun courses through your veins, cleansing nuclear fire and nourishing light both.",
+    "Whenever you roll for healing or radiant damage, add your level to the roll.",
+    "This bonus to radiant damage applies only once per attack."]
+},
+{"name": "Lunar Sorcery Expanded Spell List",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Lunar IR",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": ["When you finish a long rest, choose two spells of each spell level available to you to prepare.",
+    {
+    "type": "table",
+    "caption": "Lunar Sorcery Expanded Spell List",
+    "colLabels": [
+      "Level",
+      "Spell"
+    ],
+    "colStyles": [
+      "col-3 text-center",
+      "col-9 text-center"
+    ],
+    "rows": [
+      [
+        "1",
+        "{@spell Detect Evil and Good}, {@spell Detect Magic}, {@spell Detect Poison and Disease}, {@spell Faerie Fire}, {@spell Identify}, {@spell Jump}, {@spell Longstrider}, {@spell Protection from Evil and Good}, {@spell Purify Food and Drink}"
+      ]
+      ]
+  }
+  ]
+},
+{
+  "name": "Moon Fire",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Lunar IR",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": [
+    "You can call down the radiant light of the moon on command. You learn the {@spell sacred flame} spell, which doesn't count against the number of sorcerer cantrips you know. When you cast the spell, you can target one creature as normal or target two creatures within range that are within 5 feet of each other."
+  ]
+}
+],
+
+"optionalfeature": [
+  {
+	"name": "Inverted Gaze",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"EI"
+	],
+	"entries": [
+		"You cannot be surprised while conscious, and if a creature within 30 feet of you is looking at you, you immediately become aware of that creature's location."
+	]
+},
+  {
+	"name": "Incept Conspiracy",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Zephyr"
+			]
+		}
+	],
+	"entries": [
+		"Make a persuasion check. This check is contested by your target, and their resistance scales with their insightfulness, the strength of their personality, and their personal power.",
+          "On a success, the two of you instantly enter a state of psychically dilated experience, inserted into their recent memories, where you socially interact with them in a way that improves their propinquity with you and their opinion of you.",
+          "How much you bring them around can be improved by degrees of failure, where them failing by increments of 5 will shift their willingness to help by 1 step.",
+          {"type": "list",
+            "items": [
+              "True Believer",
+              "Bootlicker",
+              "Mercenary Attitude",
+              "Ally of Convenience",
+              "Rebel of Compatible Cause",
+              "Co-Conspirator"]
+            },
+            "They are inclined to think the best of you. They see you as welcome in their sphere of influence, and assume you have the right to be wherever you are. They treat you as a member of the same social sphere. You can secure a meeting with them if you need to.",
+            "You command their respect, and even your companions can expect to receive free room, board, and services that can be rendered from within a place they hold sway, up to and including spellcasting, if they are able—though you must provide any costly materials needed yourself. They will support you—but only you—practically indefinitely, at a similar quality of life that they have.",
+            "While near their sphere of influence, you can call upon them for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with them.",
+            "You know a set of secret signs and passwords you can use to communicate with them, and they will assist you in finding information. They never risk their lives for you or risk revealing their true identities to authorities.",
+            "They will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+	]
+},
+
+{
+	"name": "Presume Invitation",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Zephyr"
+			]
+		}
+	],
+	"entries": [
+		"Conspiracy is a delicate and intimate web of entanglements. You hide your face, yet share secrets you’d entrust to no other; you scheme contingencies for their inevitable betrayal, yet willingly—and frequently—place your life into their hands.",
+    "Surely they would understand if you took certain…liberties, shall we say? After all, they’d seize the same advantage if given half a chance…right?",
+    "As an action, you can pay a visit to the sensorium of a co-conspirator of yours—those you’ve made with your Fey Feature, as well as those you’ve made more organically.",
+    "While visiting in this way, you are insensate with regard to your own senses, but may end the use of this ability with another action.",
+    "Having access to another’s senses in this way does not adapt your brain to process this information; anything too foreign to your own experiences may be jumbled, uncomfortable to process, or even damaging to the organ you’re putting so much demand on—therefore, precautions may be prudent when visiting certain individuals.",
+    "When visiting the sensorium of a creature that has senses you do not, your DM may have you make an Intelligence saving throw, the DC of which will vary depending on how much you’re asking of your brain. On a failure, you will take 10d6 psychic damage and lose touch with reality until you finish a long rest. While your brain heals these essential processes, you lose access to your senses. A greater restoration spell cast on you ends this effect."
+	]
+},
+
+{
+	"name": "The Ties That Bind Us",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Aslanta"
+			]
+		}
+	],
+	"entries": [
+		"Aslanta has long played the part of one to bridge the gap—between the citizens in her audience and the wild outlands, between disparate communities, between her friends and the spirits of nature, between her story’s past incarnations and the present day…",
+"Now she invokes these ties to bind those she personally knows and trusts—and that trust her in turn—to herself, and to each other.",
+"Aslanta knows a list of people in her inner circle, their current state of wellbeing, and current plane.",
+"Additionally, when someone in her inner circle—including Aslanta herself—targets any others in her inner circle, they may consider them to be in range.",
+"As the binding point, Aslanta may choose to prevent any connections she does not approve of."
+	]
+},
+{
+	"name": "Adrenaline High",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Aslanta"
+			]
+		}
+	],
+	"entries": [
+		"Blood rushes. Hearts hammer. Boots pound the earth, and engines roar. This is your beat; this is your accompaniment.",
+    "As an action, make a Performance check. All that can hear your invigorating song (default: 30ft radius) have their speed, their mount’s speed, or their vehicle’s speed doubled. Additionally, they gain Temp HP equal to your Performance check. These effects last as long as Aslanta maintains her song.",
+    "Aslanta’s song may end in a few different ways—most easily, by not using her action on her turn to sustain it. ",
+    "The following will also cause her song to end:",
+    {"type": "list",
+       "items": [
+         "failing a concentration check (must be made even if not concentrating for other reasons)",
+          "a number of affected individuals equal to or greater than her Performance check falling",
+          "Aslanta being Silenced"
+            ]
+            },
+    "If her song ends for any reason other than her choosing to cease sustaining it, Aslanta may not activate Adrenaline High again until she completes a long rest. ",
+    "Additionally, she and all affected individuals become incapacitated, and have their movement reduced to zero, until they next end their turn."
+	]
+},
+{
+	"name": "Betray Intention",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+      "item": [
+        "Sarin"
+      ]
+		}
+	],
+	"entries": [
+		"Sight is the enemy. To be perceived is to be harmed, to be hunted—to be monitored and controlled.",
+"Sarin has never hesitated to use the tools of the enemy against them.",
+"Sarin may perceive any object, creature, or other phenomena within 30ft of her that has been deliberately hidden, so long as she searches them out. This ability is blocked by more than 1 inch of common metal, 1 foot of stone, 3 feet of wood or dirt, or a thin sheet of lead.",
+"Additionally, a number of times equal to her proficiency bonus, she may make a perception check to attempt to have her senses penetrate further. She regains all expended uses of this ability upon completing a short or long rest.",
+{
+  "type": "table",
+  "caption": "",
+  "colLabels": [
+    "DC",
+    "Blocking Power"
+  ],
+  "colStyles": [
+    "col-4 text-center",
+    "col-8 text-center"
+  ],
+  "rows": [
+    [
+      "DC 15",
+      "60 ft of air"
+    ],
+    [
+      "DC 20",
+      "90 ft of air"
+    ],
+    [
+    "DC 25",
+    "120 ft of air"
+    ]
+  ],
+  "footnotes": [
+    "Equivalent Blocking Power:",
+    {"type": "list",
+      "items": ["A thin sheet of lead",
+      "1 inch of common metal",
+      "1 foot of stone",
+      "3 feet of wood or dirt",
+      "30 feet of air"
+        ]
+    }
+  ]
+}
+	]
+},
+{
+	"name": "Sarin's Poison Feature",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Sarin"
+			]
+		}
+	],
+	"entries": [
+		"You have a DC for poisons that is Con based; use this DC for poisons unless they already have a higher save DC.",
+    "Downtime activity: ask for poison",
+    "During downtime/rest, ask the spirits for poison. They’ll bring you/make you some. When you get higher level you get access to better poisons."
+	]
+},
+{
+	"name": "Dissociate Toxin",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 9
+      },
+			"item": [
+				"Sarin"
+			]
+		}
+	],
+	"entries": [
+		"When you would normally take poison damage, you suffer none of the effects of the associated poison, and the damage does not affect your current health. Instead, it pools within you, building up over time.",
+"If you ever accrue double your max health in this pool, you instantly die; your body can no longer contain the gathered poison, and it ravages your body as it bursts out of you.",
+"If you begin a long rest and this pool is at least as full as your max health, you weave a cocoon around yourself and begin a mutagenic metamorphosis. You cannot abort this process yourself, but if someone else forcibly removes you from your cocoon—or if it is sufficiently damaged—the process ends, and your pool does NOT reset.",
+"If you complete your long rest inside this cocoon, your pool is reset, and you gain a mutation that you roll for on the Beneficial Mutations table."
+	]
+}
+],
+
+"spell": [
+  {
+    "name": "Permanency",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 10,
+        "unit": "minute"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "a gold—or better—plated glove, and a suitable spirit"
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "dispel"
+        ]
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "Ascend.",
+      "Make a spell affecting a person permanent. The target must be willing, and each use of Permanency must have individual DM approval.",
+      "You may only have a number of spell levels tethered to a creature equal to their level, or CR."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Grasp Tether",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "a gold—or better—plated glove"
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "Grasp the immaterial.",
+      "You may physically feel and interact with silvery cords made by the Tether Soul spell and other spiritual objects, entities, and creatures, with your gloved hand.",
+      "Removing the glove ends the spell early."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tether Soul",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "special"
+    },
+    "components": {
+      "v": false,
+      "s": false,
+      "m": {
+        "text": "a length of mana conductive wire"
+      }
+    },
+    "duration": [
+      {
+        "type": "special"
+        }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "To separate the soul from the body is death; keeping them tethered is a way to have the two in different places, without that happening.",
+      "A silvery cord extends from between the shoulder blades of the target and trails behind them, fading to invisibility after 10 feet. This cord is the tether to their material body. As long as the tether remains intact, they can find their way home. If the cord is cut—something that can happen only when an effect specifically states that it does—their soul and body are separated, killing them instantly.",
+      "Their soul can freely travel through this plane of the dead and can pass through portals there leading to any other plane. If they enter a new plane or return to the plane they were on when you cast this spell, their body and possessions are transported along the silver cord, allowing them to re-enter their body as they enter the new plane. Their soul form is a separate incarnation; any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.",
+      "The higher the grade of mana conductive metal used in the casting of this spell, the stronger the silver cord; the longer the wire, the more stable the connection across long distances."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+    },
+{
+      "name": "Suspend Animation",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 6,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "silver dust; half pound for a tiny creature, and an additional half pound for each size above tiny"
+        }
+      },
+     "duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 8
+			}
+		}
+	],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "A willing target is placed into a near death state, their brain dormant while their body is sustained.",
+        "The target is unconscious, resistant to all damage, and has their bodily needs magically met, so long as the spell lasts."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chrysalis of Suspension",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 3,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "dispel"
+          ]
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "A corpse is carefully ensconced within a buffer of stilling energy, preventing changes of any kind to occur upon it. This buffer is small and fragile, however; any damage or conditions that would be detrimental to a living person in the long term will cause the spell to end.",
+      "For all intents and purposes, the corpse is considered to be in the same state as it was when the spell was first cast, so long as the spell lasts."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Inhibit Vitality",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 1,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "1 hp of living blood and a shard of dead bone"
+      },
+     "duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			},
+			"concentration": true
+		}
+	],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You convert the smallest discrete unit of positive energy into negative energy, commanding it to inhibit the vital processes of a creature; it listens, eager to touch the land of the living.",
+      "Make a ranged spell attack against a creature. On a hit, the target takes 1d8 necrotic damage, and it takes this damage again every time it regains hit points for the duration of this spell."
+      ],
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "When you cast this spell using a spell slot of 2nd level or higher, you may choose to consume an additional 1d8 hp of living blood per slot level above 1st, to increase the spell’s damage by 1d8."
+        ]
+      }
+    ],
+    "miscTags": [
+      "HL"
+    ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drain Blood",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 1,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+          "distance": {
+        "type": "feet",
+        "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+        },
+      "duration": [
+		{
+			"type": "instant"
+		}
+	],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "Attempt to drain blood from a creature within range.",
+      "The target must make a Constitution saving throw. They take 2d8 necrotic damage on a failed save, or half as much damage on a successful one.",
+      "The DC of this save increases by 1 if the target is not at full HP, a further 1 if they have taken slashing damage since the end of their last turn, and another 1 if you have used a blood magic spell or a spell augmented with blood on them since they have last been at full HP.",
+      "Any damage you deal with this spell is represented by blood, which flows through the air towards you, floating as an orb by your side."
+      ],
+      "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+        ]
+      }
+    ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      }
+  },
+    {
+      "name": "Numb",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 1,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+        "type": "feet",
+        "amount": 60
+        }
+      },
+      "components": {
+        "m": {
+      "text": "a needle or pin; for example, a pine or sewing needle"
+        }
+      },
+          "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "Pull blood away from a creature’s limbs and into their core, numbing them and making them clumsy.",
+      "The target must make a Constitution saving throw. If they fail this save, they have disadvantage on attacks and ability checks that use Strength or Dexterity. If they fail by 5 or more, they fall prone. If they fail by 10 or more, they are blinded. If they fail by 20 or more, they fall unconscious.",
+      "The target repeats this save at the start of each of their turns, ending this spell on them on a success. If they have taken damage since the start of their last turn, they do so with advantage."
+      ],
+      "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "When you cast this spell using a spell slot of 2nd level or higher, you may target 1 additional creature within range for each level above 1st."
+        ]
+      }
+    ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    
+      {
+      "name": "Transfigure Vessel",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 1,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+          "distance": {
+        "type": "feet",
+        "amount": 30
+        }
+      },
+      "components": {
+      "v": true,
+      "s": true,
+      "m": {
+      "text": "a seed or bud"
+        }
+      },
+          "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "Give a creature an adaptation unsuited to their current environment.",
+      "The target must make a Constitution saving throw. If they fail this save, you may pick an effect from the list below to inflict upon them. For each degree they fail by, the further down the list you may select from.",
+        {"type": "list",
+        "items": [
+      "{@bold DC -1:} Target gains the effects of {@spell Spider Climb}, but their move speed is halved on flat ground.",
+      "{@bold DC -2:} Target gains {@sense darkvision} out to a range of 120 ft, but has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when the creature, the target of their attacks, or whatever they are trying to perceive is in direct sunlight.",
+      "{@bold DC -3:} Target is {@condition blinded} but gains {@sense blindsight} to a range of 15 ft. The target cannot use its {@sense blindsight} if it is {@condition deafened}",
+      "{@bold DC -4:} Target gains a swim speed equal to its movement speed, and and its speed on land becomes 0 as it loses its legs.",
+      "{@bold DC -5:} The targets hands transform into bestial claws. These claws are natural weapons, which it can use to make unarmed strikes. When it hits with the claws, the strike deals 1d6 + Strength modifier slashing damage. The target is unable to take any action that requires hands, such as holding a weapon, opening a door, or casting a spell that requires somatic components.",
+      "{@bold DC -6:} Target gains the ability to breathe underwater. Target loses the ability to breathe air. For reference, {@quickref Suffocating|PHB|2}"
+  ]
+      },
+    "The target repeats this save at the start of each of their turns, ending this spell on them on a success."
+      ],
+      "classes": {
+      "fromSubclass": [
+        {
+          "class": {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          "subclass": {
+            "name": "Lunar IR",
+            "shortName": "Lunar IR",
+            "source": "IR"
+          }
+        }
+    ]
+  }
+  },
+    {
+      "name": "Link Aspect",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 1,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+       "m": "1 hp of your blood"
+      },
+      	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "It is Written: None Shall Surpass You.",
+		"The target must make a Constitution saving throw. They may choose to spend their hit points, adding a bonus to their save equal to the number of hit points spent. This number is capped at twice the number of hit points you spend.",
+		"You may choose to spend your hit points, adding a bonus to the save DC of this casting equal to the number of hit points spent. This number is capped at twice the number of hit points they spend.",
+		"If they fail this save, you may choose 1 ability score, armor class, movement speed, or proficiency bonus. Whatever you choose, theirs can be no higher than yours.",
+		"The target repeats this save at the start of each of their turns, ending this spell on them on a success. Each time this save is made, the rules above apply."
+      ]
+      }
+],
+
+"variantrule": [
+    {
+        "name": "Mana Crysts",
+        "source": "immuneresponse",
+        "page": 0,
+        "ruleType": "V",
+        "entries": [
+            "Can store/draw spell slots",
+            {"type": "list",
+            "items": [
+              "Any citizen with spell slots",
+              "Anyone with at least +2 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x spell level; this check must be made every time."]
+            },
+            "Can merge mana crystals of the same fill percentage and slot level, to create one mana crystal with the capacity of both.",
+            {"type": "list",
+            "items": [
+              "Anyone with at least +4 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x spell level; this check must be made every time."]
+            },
+            "Can merge mana crystals of the same capacity and slot level, to create one mana crystal with the same capacity, but of the next slot level up.",
+            {"type": "list",
+            "items": [
+              "Anyone with at least +6 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x target spell level; this check must be made every time."
+              ]             
+            },
+            "Attuning to a mana crystal increases its store/draw efficiency for you by 1 step.",
+            "Can trim mana crystals to reduce the number of imperfections, improving store/draw efficiency by 1 step. This halves the capacity, or reduces the spell level by one.",
+            {"type": "list",
+            "items": ["Anyone with at least +8 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x spell level; after one success, no further aid or checks are needed.",
+            "Anyone who succeeds an arcana check with a DC of 10+2x target spell level; this check must be made every time."
+              ]             
+            },
+            "Can partitioned",
+            {"type": "list",
+            "items": [
+              "Caps at 5th lvl. Anyone with at least +10 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x the highest spell level + the number of different spell levels; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x the highest spell level + the number of different spell levels; this check must be made every time."
+              ]             
+            },
+            "Can modular",
+            {"type": "list",
+            "items": [
+            "Caps at 5th lvl. Anyone with at least +12 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x the highest possible spell level + the number of slot levels; after one success, no further aid or checks are needed.",
+            "Anyone who succeeds an arcana check with a DC of 10+2x the highest possible spell level + the number of slot levels; this check must be made every time."
+            ]             
+            },
+            "Can precision",
+            {"type": "list",
+            "items": [
+              "Caps at 5th lvl. Anyone with at least +14 in arcana, given they have been coached by someone who can, or succeed an arcana check with a DC of 10+2x the highest possible spell level + the number of sorcery points; after one success, no further aid or checks are needed.",
+              "Anyone who succeeds an arcana check with a DC of 10+2x the highest possible spell level + the number of sorcery points; this check must be made every time."]             
+            }
+          ]
+        }
+],
+"monster":[
+  {
+    "name": "Dust Devil",
+    "source": "IR",
+    "page": 0,
+    "size": [
+      "T"
+    ],
+    "type": "ooze",
+    "alignment": [
+      "U"
+    ],
+    "ac": [
+      15
+    ],
+    "hp": {
+      "average": 16,
+      "formula": "3d4 + 9"
+    },
+    "speed": {
+      "walk": 40,
+      "climb": 40,
+      "fly": 40
+    },
+    "str": 6,
+    "dex": 20,
+    "con": 16,
+    "int": 3,
+    "wis": 10,
+    "cha": 1,
+    "senses": [
+      "blindsight 60 ft."
+    ],
+    "passive": 10,
+    "immune": [
+      "poison",
+      "psychic"
+    ],
+    "conditionImmune": [
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "stunned",
+      "unconscious"
+      ],
+    "cr": "1",
+    "trait": [
+      {
+        "name": "Variant: Familiar",
+        "entries": [
+          "DD can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what DD senses as long as they are within 1 mile of each other. While DD is within 10 feet of its master, the master shares DD’s Weird Absorption trait. "
+        ]
+      },
+      {
+        "name": "Greater Resistance",
+        "entries": [
+          "DD takes about a tenth of the normal damage from bludgeoning, piercing, and slashing. Remove the ones place; what’s left is the damage taken."
+        ]
+      },
+      {
+        "name": "Weird Absorption",
+        "entries": [
+          "When DD would take an odd amount of fire, lightning, thunder, or radiant damage, it instead heals for that amount. "
+        ]
+      },
+      {
+        "name": "Velcro",
+        "entries": [
+          "DD can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+        ]
+      },
+      {
+        "name": "Accessory Ooze",
+        "entries": [
+          "DD is not treated as a separate creature from Zephyr; it is treated by most rules as an item, and additionally, you can make any spell you cast that targets only you also target your familiar."
+        ]
+      },
+      {
+        "name": "Eyes and Ears",
+        "entries": [
+          "A creature touching DD can choose to donate one of its senses, until DD touches the donor again. The donor cannot utilize this sense until it is returned."
+        ]
+      },
+      {
+        "name": "Inconsequential",
+        "entries": [
+          "Other creatures consider DD an object, unless they take an action to inspect DD, making an Investigation check against Zephyr’s spell save DC."
+        ]
+      }
+      
+    ],
+    "action": [
+      {
+        "name": "Static",
+        "entries": [
+          "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 5}) lightning damage."
+        ]
+      }
+    ],
+    "bonus": [
+    
+      {
+        "name": "Slippery Bastard",
+        "entries": [
+          "On each of its turns, the DD can use a bonus action to take the {@action dash}, {@action disengage}, or {@action hide} action."
+        ]
+      }
+    ],
+    "traitTags": [
+      "Spider Climb"
+    ],
+    "senseTags": [
+      "B"
+    ],
+    "damageTags": [
+      "L"
+    ]
+  },
+  {
+    "name": "Ganymede Familiar",
+    "source": "IR",
+    "page": 0,
+    "size": [
+      "L"
+    ],
+    "type": "elemental",
+    "alignment": [
+      "U"
+    ],
+    "ac": [
+      {
+        "ac": 14,
+        "from": [
+          "natural armor"
+        ]
+      }
+    ],
+    "hp": {
+      "average": 37,
+      "formula": "5d10 + 10"
+    },
+    "speed": {
+      "walk": 50
+    },
+    "str": 17,
+    "dex": 15,
+    "con": 15,
+    "int": 3,
+    "wis": 12,
+    "cha": 7,
+    "skill": {
+      "perception": "+3",
+      "stealth": "+4"
+    },
+    "senses": [
+      "truesight 5 ft."
+    ],
+    "passive": 13,
+    "immune": [
+      "cold",
+      {
+        "immune": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "note": "from nonmagical attacks that are not silvered",
+        "cond": true
+      }
+    ],
+    "cr": "1",
+    "trait": [
+      {
+        "name": "Keen Hearing and Smell",
+        "entries": [
+          "The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+        ]
+      },
+      {
+        "name": "Pack Tactics",
+        "entries": [
+          "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+        ]
+      },
+      {
+        "name": "Ephemeral",
+        "entries": [
+          "The wolf can attempt to hide even when only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena, and does so with advantage."
+        ]
+      },
+          {
+        "name": "Purity",
+        "entries": [
+          "The wolf has advantage on saves against disease, poison, and the {@condition Blinded}, {@condition Deafened}, {@condition Paralyzed}, and {@condition Poisoned} conditions. While you are within 10 ft of your wolf, you also benefit from this trait."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Bite",
+        "entries": [
+          "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+        ]
+      },
+          {
+        "name": "Shapechanger",
+        "entries": [
+          "Your wolf can use its action to change into a white hare, owl, fox, rat, weasel, bear, or its base wolf form. Its stats—excluding creature type, damage immunities, hit points, and Shapechanger trait—change to match that of the new form."
+        ]
+      }
+    ],
+    "traitTags": [
+      "Keen Senses",
+      "Pack Tactics"
+    ],
+    "damageTags": [
+      "P"
+    ],
+    "miscTags": [
+      "MW"
+    ],
+    "conditionInflict": [
+      "prone"
+    ],
+    "savingThrowForced": [
+      "strength"
+    ]
+  }
+],
+"table": [
+    {
+        "name": "Approved Permanancy Spells",
+        "source": "IR",
+        "page": 0,
+        "colLabels": [
+          "Level",
+          "Spell"
+        ],
+        "colStyles": [
+          "col-4 text-center",
+          "col-8"
+        ],
+        "rows": [
+          [
+            "1",
+            "{@spell Beast Bond|xge}, {@spell Comprehend Languages}, {@spell Detect Magic}, {@spell Detect Poison and Disease}, {@spell Expeditious Retreat}, {@spell Jump}, {@spell Longstrider}, {@spell Mage Armor}, {@spell Protection from Evil and Good}, {@spell Shield of Faith}, {@spell Speak with Animals}"
+          ],
+          ["2",
+          "{@spell Aid}, {@spell Alter Self}, {@spell Borrowed Knowledge|scc}, {@spell Darkvision}, {@spell Detect Thoughts}, {@spell Enhance Ability}, {@spell Protection from Poison}, {@spell Spider Climb}, {@spell See Invisibility}"],
+          ["3",
+          "{@spell Fly}, {@spell Intellect Fortress|tce}, {@spell Nondetection}, {@spell Protection from Energy}, {@spell Tongues}, {@spell Waterbreathing}"],
+          ["4",
+          "{@spell Aura of Life}, {@spell Aura of Purity}, {@spell Fire Shield}, {@spell Freedom of Movement}, {@spell Stoneskin}"],
+          ["5",
+          "{@spell Skill Empowerment|xge}"],
+          ["6",
+          "{@spell Investiture of Flame|XGE}, {@spell Investiture of Stone|XGE}, {@spell Investiture of Wind|XGE}, {@spell Investiture of Ice|XGE}, {@spell True Seeing}, {@spell Wind Walk}"],
+          ["7",
+          "{@spell Regenerate}"],
+          ["8",
+          "{@spell Antipathy/Sympathy}, {@spell Glibness}, {@spell Mind Blank}"],
+          ["9",
+          "{@spell Foresight}, {@spell Shapechange}"]
+          ]
+    }
+]
+}
